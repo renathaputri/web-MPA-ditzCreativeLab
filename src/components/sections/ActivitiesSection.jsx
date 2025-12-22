@@ -63,7 +63,7 @@ const ActivitiesSection = () => {
 `;
 
     return (
-        <div className="flex max-w-7xl mx-auto bg-transparent shadow-none rounded-lg overflow-hidden gap-8 mt-20 mb-20">
+        <div className="flex max-w-7xl mx-auto bg-transparent shadow-none rounded-lg overflow-hidden gap-12 mt-20 mb-20">
             {/* Kiri - Gambar */}
             <div className="flex-shrink-0 mt-12 mb-12">
                 <img

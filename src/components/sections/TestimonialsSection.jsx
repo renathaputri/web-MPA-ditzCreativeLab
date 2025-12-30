@@ -111,7 +111,7 @@ const TestimonialsSection = () => {
                     {/* Line kanan */}
                     <span className="flex-1 h-px bg-gradient-to-l from-[#3B82F6] to-[#F089D5]" />
                 </div>
-                <h2 className="text-4xl mt-8 md:text-5xl font-bold text-blue-600 mb-4">
+                <h2 className="text-4xl mt-4 md:text-5xl font-bold text-blue-600 mb-4">
                     What they say about us
                 </h2>
                 <p className="text-blue-500 text-xl max-w-2xl mx-auto mb-16">

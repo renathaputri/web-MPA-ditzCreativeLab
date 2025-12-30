@@ -2,15 +2,7 @@ import problemSectionSvg from "../../img/problemSection.svg"; // Import SVG file
 
 // Component untuk setiap problem statement
 const ProblemCard = ({ svgIcon, text }) => (
-    <div
-        className="flex items-start gap-4 pb-4 mb-4"
-        style={{
-            backgroundImage: 'repeating-linear-gradient(to right, #3B82F6 0px, #F089D5 4px, bg-white 4px, transparent 8px)',
-            backgroundSize: '100% 1px',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'bottom'
-        }}
-    >
+    <div className="flex items-start gap-4 border-b border-dashed border-blue-500 pb-4 mb-4">
         <span
             className="flex-shrink-0 mt-1"
             dangerouslySetInnerHTML={{ __html: svgIcon }}

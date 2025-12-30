@@ -87,7 +87,7 @@ const StatsSection = () => {
                     </div>
 
                 </div>
-                <h2 className="text-3xl mt-8 md:text-5xl font-bold text-blue-600 mb-4">You’re in the right decision</h2>
+                <h2 className="text-3xl mt-4 md:text-5xl font-bold text-blue-600 mb-4">You’re in the right decision</h2>
                 <p className="text-blue-500 text-xl max-w-2xl mx-auto mb-16">
                     Here are the reason why is your decision make. <br />
                     We have experienced, clients satisfied and everything.

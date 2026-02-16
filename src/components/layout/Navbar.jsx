@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="rounded-full bg-gradient-to-r from-[#3B82F6] to-[#F089D5] p-[1.5px]">
         {/* Inner White */}
         <div className="bg-white rounded-full px-6 py-3 flex items-center justify-between shadow-sm">
-          
+
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img src={logo} alt="Ditz Logo" className="h-8 w-auto" />
@@ -42,12 +42,12 @@ const Navbar = () => {
           {/* CTA */}
           <div className="hidden md:block">
             <Button
-  href="https://wa.me/6287788714970?text=Halo%20Ditz!%20Saya%20tertarik%20dengan%20layanannya."
-  variant="primary"
-  className="!px-6 !py-2 text-sm"
->
-  Contact Us
-</Button>
+              href="https://wa.me/6287788714970?text=Halo%20Ditz!%20Saya%20tertarik%20dengan%20layanannya."
+              variant="primary"
+              className="!px-6 !py-2 text-sm"
+            >
+              Contact Us
+            </Button>
           </div>
 
           {/* Mobile Toggle */}
@@ -79,12 +79,12 @@ const Navbar = () => {
               ))}
 
               <Button
-  href="https://wa.me/6287788714970?text=Halo%20Ditz!%20Saya%20tertarik%20dengan%20layanannya."
-  variant="primary"
-  className="!px-6 !py-2 text-sm"
->
-  Contact Us
-</Button>
+                href="https://wa.me/6287788714970?text=Halo%20Ditz!%20Saya%20tertarik%20dengan%20layanannya."
+                variant="primary"
+                className="!px-6 !py-2 text-sm"
+              >
+                Contact Us
+              </Button>
             </div>
           </div>
         </div>

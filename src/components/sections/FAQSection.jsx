@@ -10,10 +10,9 @@ const FAQItem = ({ question, answer, isOpen, onToggle }) => {
                 rounded-2xl p-4 bg-white mb-4
                 outline outline-2
                 transition-all duration-300
-                ${
-                    isOpen
-                        ? 'outline-blue-500 shadow-md'
-                        : 'outline-blue-200 hover:outline-blue-400'
+                ${isOpen
+                    ? 'outline-blue-500 shadow-md'
+                    : 'outline-blue-200 hover:outline-blue-400'
                 }
             `}
         >
@@ -51,15 +50,15 @@ const FAQSection = () => {
 
                 {/* HEADER */}
                 <div className="flex items-center justify-center gap-3">
-                        {/* Line kiri */}
-                        <span className="flex-1 h-px bg-gradient-to-r from-[#3B82F6] to-[#F089D5]" />
+                    {/* Line kiri */}
+                    <span className="flex-1 h-px bg-gradient-to-r from-[#3B82F6] to-[#F089D5]" />
 
-                        {/* Icon SVG */}
-                        <div className="">
-                            <span
-                                className="w-6 h-6"
-                                dangerouslySetInnerHTML={{
-                                    __html: `<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    {/* Icon SVG */}
+                    <div className="">
+                        <span
+                            className="w-6 h-6"
+                            dangerouslySetInnerHTML={{
+                                __html: `<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_456_286)">
 <path d="M17.025 66.3748C12.5583 58.8388 10.9959 49.9316 12.6311 41.3254C14.2663 32.7191 18.9867 25.0056 25.906 19.633C32.8254 14.2604 41.4678 11.5982 50.2109 12.1461C58.954 12.6941 67.1964 16.4145 73.3909 22.6089C79.5853 28.8033 83.3057 37.0458 83.8536 45.7889C84.4016 54.532 81.7393 63.1744 76.3667 70.0937C70.9942 77.0131 63.2807 81.7334 54.6744 83.3687C46.0681 85.0039 37.1609 83.4415 29.625 78.9748L17.175 82.4998C16.6649 82.649 16.1241 82.6582 15.6092 82.5265C15.0943 82.3948 14.6243 82.127 14.2486 81.7512C13.8728 81.3754 13.605 80.9055 13.4733 80.3906C13.3416 79.8757 13.3508 79.3349 13.5 78.8248L17.025 66.3748Z" stroke="url(#paint0_linear_456_286)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M48 50.25C49.2426 50.25 50.25 49.2426 50.25 48C50.25 46.7574 49.2426 45.75 48 45.75C46.7574 45.75 45.75 46.7574 45.75 48C45.75 49.2426 46.7574 50.25 48 50.25Z" fill="url(#paint1_linear_456_286)"/>
@@ -90,12 +89,12 @@ const FAQSection = () => {
 </svg>
 
 `,
-                                }}
-                            />
-                        </div>
+                            }}
+                        />
+                    </div>
 
-                        {/* Line kanan */}
-                        <span className="flex-1 h-px bg-gradient-to-l from-[#3B82F6] to-[#F089D5]" />
+                    {/* Line kanan */}
+                    <span className="flex-1 h-px bg-gradient-to-l from-[#3B82F6] to-[#F089D5]" />
                 </div>
 
                 <div className="text-center mb-8">

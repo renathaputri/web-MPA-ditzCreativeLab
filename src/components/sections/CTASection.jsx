@@ -14,18 +14,18 @@ const CTASection = () => {
                 <div className="relative z-10">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Make your brand grow with creativities</h2>
                     <p className="text-blue-100 text-xl mb-8">The new game changer of creativity</p>
-                   <Button
-  variant="secondary"
-  className="px-10 py-4 text-lg font-bold text-blue-600"
-  onClick={() =>
-    window.open(
-      'https://wa.me/6287788714970?text=Halo%20Ditz%20Creative%20Lab!%20Saya%20tertarik%20dengan%20layanan%20Anda.%20Boleh%20kita%20diskusi%20lebih%20lanjut?',
-      '_blank'
-    )
-  }
->
-  Get Started
-</Button>
+                    <Button
+                        variant="secondary"
+                        className="px-10 py-4 text-lg font-bold text-blue-600"
+                        onClick={() =>
+                            window.open(
+                                'https://wa.me/6287788714970?text=Halo%20Ditz%20Creative%20Lab!%20Saya%20tertarik%20dengan%20layanan%20Anda.%20Boleh%20kita%20diskusi%20lebih%20lanjut?',
+                                '_blank'
+                            )
+                        }
+                    >
+                        Get Started
+                    </Button>
 
                 </div>
             </div>

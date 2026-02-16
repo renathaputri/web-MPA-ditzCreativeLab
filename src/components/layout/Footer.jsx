@@ -7,7 +7,7 @@ import logo from '../../img/logomono.svg';
 const Footer = () => {
     return (
         <footer className="bg-gradient-to-b from-[#8B5CF6] to-[#6D28D9] text-white pt-20 pb-10 px-4 mt-20 rounded-t-[3rem]">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 place-items-center md:place-items-start">
+            <div className="max-w-7xl mx-auto grid grid-cols-1 md: gap-8 place-items-center ">
 
                 {/* Brand */}
                 <div className="col-span-1 md:col-span-1">

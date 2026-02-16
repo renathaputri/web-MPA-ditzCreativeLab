@@ -21,7 +21,19 @@ const HeroSection = () => {
                     {heroData.subheadline}
                 </p>
 
-                <Button variant="primary" className="text-lg px-8 py-4">{heroData.ctaText}</Button>
+               <Button
+  variant="primary"
+  className="text-lg px-8 py-4"
+  onClick={() =>
+    window.open(
+      'https://wa.me/6287788714970?text=Halo%20Ditz%20Creative%20Lab!%20Saya%20tertarik%20dengan%20layanan%20Anda.%20Boleh%20kita%20diskusi%20lebih%20lanjut?',
+      '_blank'
+    )
+  }
+>
+  {heroData.ctaText}
+</Button>
+
             </div>
         </section>
     );

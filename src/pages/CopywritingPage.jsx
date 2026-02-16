@@ -1,13 +1,16 @@
 
 import React from 'react';
 import ServicePageTemplate from '../components/templates/ServicePageTemplate';
-import { PenTool, FileText, MessageSquare } from 'lucide-react';
+import monitorIcon from '../img/servicesPage/socialMedia/monitor.svg';
+import compassIcon from '../img/servicesPage/socialMedia/compass.svg';
+import chartIcon from '../img/servicesPage/socialMedia/chart2.svg';
+
 
 const CopywritingPage = () => {
     const focusItems = [
         {
             title: "Website Copywriting",
-            icon: MonitorPlay, // Using generic icon if specific import failed, but ideally imported above
+            icon: monitorIcon,
             points: [
                 "Compelling headlines and subheadings.",
                 "SEO-optimized content.",
@@ -17,7 +20,7 @@ const CopywritingPage = () => {
         },
         {
             title: "Social Media Captions",
-            icon: MessageSquare,
+            icon: compassIcon,
             points: [
                 "Engaging captions for Instagram & TikTok.",
                 "Hashtag strategy integration.",
@@ -27,7 +30,7 @@ const CopywritingPage = () => {
         },
         {
             title: "Blog & Article Writing",
-            icon: FileText,
+            icon: chartIcon,
             points: [
                 "In-depth industry articles.",
                 "Keyword research and integration.",

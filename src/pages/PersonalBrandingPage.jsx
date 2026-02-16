@@ -1,13 +1,16 @@
 
 import React from 'react';
 import ServicePageTemplate from '../components/templates/ServicePageTemplate';
-import { User, Award, TrendingUp } from 'lucide-react';
+import monitorIcon from '../img/servicesPage/socialMedia/monitor.svg';
+import compassIcon from '../img/servicesPage/socialMedia/compass.svg';
+import chartIcon from '../img/servicesPage/socialMedia/chart2.svg';
+
 
 const PersonalBrandingPage = () => {
     const focusItems = [
         {
             title: "Brand Strategy",
-            icon: User,
+            icon: monitorIcon,
             points: [
                 "Identifying unique value proposition.",
                 "Target audience definition.",
@@ -17,7 +20,7 @@ const PersonalBrandingPage = () => {
         },
         {
             title: "Digital Presence",
-            icon: TrendingUp,
+            icon: compassIcon,
             points: [
                 "Social media profile optimization.",
                 "Content strategy for personal growth.",
@@ -27,7 +30,7 @@ const PersonalBrandingPage = () => {
         },
         {
             title: "Reputation Management",
-            icon: Award,
+            icon: chartIcon,
             points: [
                 "Guidelines for public communication.",
                 "Crisis management basics.",

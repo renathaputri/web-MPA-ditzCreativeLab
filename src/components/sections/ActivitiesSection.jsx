@@ -3,7 +3,7 @@ import activitiesSvg from "../../img/activities.svg";
 
 // Component untuk setiap activity statement
 const ActivityCard = ({ svgIcon, text }) => (
-    <div className="flex items-start gap-4 border-b border-dashed border-blue-500 pb-4 mb-4">
+    <div className="flex items-start justify-center lg:justify-start gap-4 border-b border-dashed border-blue-500 pb-4 mb-4">
         <span
             className="flex-shrink-0 mt-1"
             dangerouslySetInnerHTML={{ __html: svgIcon }}
@@ -63,20 +63,20 @@ const ActivitiesSection = () => {
 `;
 
     return (
-        <div className="flex max-w-7xl mx-auto bg-transparent shadow-none rounded-lg overflow-hidden gap-12 mt-20 mb-20">
+        <div className="flex flex-col lg:flex-row max-w-7xl mx-auto bg-transparent shadow-none rounded-lg overflow-hidden gap-12 mt-20 mb-20 px-4 lg:px-0">
             {/* Kiri - Gambar */}
-            <div className="flex-shrink-0 mt-12 mb-12">
+            <div className="flex-shrink-0 mt-12 mb-12 flex justify-center lg:block">
                 <img
                     src={activitiesSvg}
                     alt="Activities Illustration"
                     width={454}
                     height={290}
-                    className="object-cover"
+                    className="object-cover max-w-full h-auto"
                 />
             </div>
 
             {/* Kanan - Title + Activity Statements */}
-            <div className="flex flex-col p-6 flex-1">
+            <div className="flex flex-col p-6 flex-1 text-center lg:text-left">
                 <h2 className="text-3xl md:text-5xl font-bold text-blue-600 mb-4 whitespace-normal">
                     Let Ditz Crew do their
                     <br />

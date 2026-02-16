@@ -1,13 +1,16 @@
 
 import React from 'react';
 import ServicePageTemplate from '../components/templates/ServicePageTemplate';
-import { BarChart2, Compass, MonitorPlay } from 'lucide-react';
+import monitorIcon from '../img/servicesPage/socialMedia/monitor.svg';
+import compassIcon from '../img/servicesPage/socialMedia/compass.svg';
+import chartIcon from '../img/servicesPage/socialMedia/chart2.svg';
+
 
 const SocialMediaPage = () => {
     const focusItems = [
         {
             title: "Social Media Management",
-            icon: MonitorPlay,
+            icon: monitorIcon,
             points: [
                 "Developing effective content strategies and post schedules.",
                 "Caption and hashtag research.",
@@ -17,7 +20,7 @@ const SocialMediaPage = () => {
         },
         {
             title: "Content Strategy & Planning",
-            icon: Compass,
+            icon: compassIcon,
             points: [
                 "Develop pillars strategy.",
                 "Monthly content calendar.",
@@ -27,7 +30,7 @@ const SocialMediaPage = () => {
         },
         {
             title: "Insight & Analytics",
-            icon: BarChart2,
+            icon: chartIcon,
             points: [
                 "Visualize significant matrix content engagement growth.",
                 "Detailed reviews with performance.",

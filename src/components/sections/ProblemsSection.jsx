@@ -5,7 +5,7 @@ import { problemsData } from '../../data/landingPage';
 
 // Component untuk setiap problem statement
 const ProblemCard = ({ svgIcon, text }) => (
-    <div className="flex items-start gap-4 border-b border-dashed border-blue-500 pb-4 mb-4">
+    <div className="flex items-start justify-center lg:justify-start gap-4 border-b border-dashed border-blue-500 pb-4 mb-4">
         <span
             className="flex-shrink-0 mt-1"
             dangerouslySetInnerHTML={{ __html: svgIcon }}
@@ -17,20 +17,20 @@ const ProblemCard = ({ svgIcon, text }) => (
 // Main component - Renamed for consistency
 const ProblemsSection = () => {
     return (
-        <div className="flex max-w-7xl mx-auto bg-transparent shadow-none rounded-lg overflow-hidden gap-12 mt-20 mb-20 px-4 md:px-0 flex-col md:flex-row">
+        <div className="flex max-w-7xl mx-auto bg-transparent shadow-none rounded-lg overflow-hidden gap-12 mt-20 mb-20 px-4 lg:px-0 flex-col lg:flex-row">
             {/* Kiri - Gambar */}
-            <div className="flex-shrink-0 mt-12 mb-12 flex justify-center md:block">
+            <div className="flex-shrink-0 mt-12 mb-12 flex justify-center lg:block">
                 <img
                     src={problemSectionSvg}
                     alt="Problem Section Illustration"
                     width={454}
                     height={290}
-                    className="object-cover"
+                    className="object-cover max-w-full h-auto"
                 />
             </div>
 
             {/* Kanan - Title + Problem Statements */}
-            <div className="flex flex-col p-6 flex-1">
+            <div className="flex flex-col p-6 flex-1 text-center lg:text-left">
                 <h2 className="text-3xl md:text-5xl font-bold text-blue-600 mb-6">{problemsData.title}</h2>
 
                 {/* Problem Statements - Map dynamic data */}

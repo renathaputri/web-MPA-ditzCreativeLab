@@ -1,13 +1,15 @@
 
 import React from 'react';
 import ServicePageTemplate from '../components/templates/ServicePageTemplate';
-import { Palette, PenTool, Layout } from 'lucide-react';
+import monitorIcon from '../img/servicesPage/socialMedia/monitor.svg';
+import compassIcon from '../img/servicesPage/socialMedia/compass.svg';
+import chartIcon from '../img/servicesPage/socialMedia/chart2.svg';
 
 const GraphicDesignPage = () => {
     const focusItems = [
         {
             title: "Brand Identity",
-            icon: Palette,
+            icon: monitorIcon,
             points: [
                 "Logo design and usage guidelines.",
                 "Color palette selection.",
@@ -17,7 +19,7 @@ const GraphicDesignPage = () => {
         },
         {
             title: "Marketing Materials",
-            icon: Layout,
+            icon: compassIcon,
             points: [
                 "Business cards and stationery.",
                 "Flyers, brochures, and posters.",
@@ -27,7 +29,7 @@ const GraphicDesignPage = () => {
         },
         {
             title: "Custom Illustrations",
-            icon: PenTool,
+            icon: chartIcon,
             points: [
                 "Unique character design.",
                 "Infographics and iconography.",

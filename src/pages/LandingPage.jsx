@@ -16,8 +16,12 @@ const LandingPage = () => {
             <ProblemsSection />
             <StatsSection />
             <ActivitiesSection />
-            <TestimonialsSection />
-            <ServicesSection />
+            <section id="testimonials">
+                <TestimonialsSection />
+            </section>
+            <section id="services">
+                <ServicesSection />
+            </section>
             <FAQSection />
             <CTASection />
         </MainLayout>

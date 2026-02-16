@@ -3,24 +3,38 @@ import { faqs } from '../../data/faqs';
 import { ChevronDown } from 'lucide-react';
 import faqImage from '../../img/faq.svg';
 
-const FAQItem = ({ question, answer }) => {
-    const [isOpen, setIsOpen] = useState(false);
-
+const FAQItem = ({ question, answer, isOpen, onToggle }) => {
     return (
-        <div className="border border-gray-100 rounded-2xl p-4 bg-white shadow-sm mb-4">
+        <div
+            className={`
+                rounded-2xl p-4 bg-white mb-4
+                outline outline-2
+                transition-all duration-300
+                ${
+                    isOpen
+                        ? 'outline-blue-500 shadow-md'
+                        : 'outline-blue-200 hover:outline-blue-400'
+                }
+            `}
+        >
             <button
                 className="w-full flex items-center justify-between text-left"
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={onToggle}
             >
-                <span className="font-bold text-blue-500">{question}</span>
+                <span className="font-bold text-blue-500">
+                    {question}
+                </span>
+
                 <ChevronDown
-                    className={`text-blue-500 transition-transform ${isOpen ? 'rotate-180' : ''
-                        }`}
+                    className={`
+                        text-blue-500 transition-transform duration-300
+                        ${isOpen ? 'rotate-180' : ''}
+                    `}
                 />
             </button>
 
             {isOpen && (
-                <div className="mt-4 text-blue-500 text-sm border-t border-gray-50 pt-4">
+                <div className="mt-4 pt-4 text-blue-500 text-sm border-t border-blue-100">
                     {answer}
                 </div>
             )}
@@ -29,13 +43,14 @@ const FAQItem = ({ question, answer }) => {
 };
 
 const FAQSection = () => {
+    const [activeIndex, setActiveIndex] = useState(null);
+
     return (
         <section className="py-20 px-4">
             <div className="max-w-7xl mx-auto">
 
-                {/* Header */}
-                <div className="text-center mb-8">
-                    <div className="flex items-center justify-center gap-3">
+                {/* HEADER */}
+                <div className="flex items-center justify-center gap-3">
                         {/* Line kiri */}
                         <span className="flex-1 h-px bg-gradient-to-r from-[#3B82F6] to-[#F089D5]" />
 
@@ -73,6 +88,7 @@ const FAQSection = () => {
 </clipPath>
 </defs>
 </svg>
+
 `,
                                 }}
                             />
@@ -80,9 +96,10 @@ const FAQSection = () => {
 
                         {/* Line kanan */}
                         <span className="flex-1 h-px bg-gradient-to-l from-[#3B82F6] to-[#F089D5]" />
-                    </div>
+                </div>
 
-                    <h2 className="text-4xl mt-4 mb-4 md:text-5xl font-bold text-blue-600">
+                <div className="text-center mb-8">
+                    <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mt-4">
                         Frequently Asked Questions
                     </h2>
 
@@ -91,10 +108,8 @@ const FAQSection = () => {
                     </p>
                 </div>
 
-
                 {/* CONTENT */}
                 <div className="grid md:grid-cols-2 gap-12 items-center">
-                    {/* Illustration */}
                     <div className="flex justify-center">
                         <img
                             src={faqImage}
@@ -105,10 +120,18 @@ const FAQSection = () => {
                         />
                     </div>
 
-                    {/* Accordion */}
                     <div>
                         {faqs.map((faq, idx) => (
-                            <FAQItem key={idx} {...faq} />
+                            <FAQItem
+                                key={idx}
+                                {...faq}
+                                isOpen={activeIndex === idx}
+                                onToggle={() =>
+                                    setActiveIndex(
+                                        activeIndex === idx ? null : idx
+                                    )
+                                }
+                            />
                         ))}
                     </div>
                 </div>
@@ -118,4 +141,3 @@ const FAQSection = () => {
 };
 
 export default FAQSection;
-
